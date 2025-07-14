@@ -47,7 +47,12 @@ if (palavra == palavraInvertida) {
 } else {
    console.log (`A palavra ${palavra} não é um palindromo!`);  
 }
-
 }
-
 palavraPalindromo();
+
+//Função ordenar números
+function ordenarNumeros(a,b,c) {
+   const numerosOrdenados = [a,b,c].sort((x,y)=>x-y);
+   console.log(`Números ordenados ${numerosOrdenados.join(',')}`);  
+}
+ordenarNumeros(9,1,15);
