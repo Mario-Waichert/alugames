@@ -35,3 +35,19 @@ document.addEventListener('DOMContentLoaded',function(){
     jogosAlugados = document.querySelectorAll('.dashboard__item__img--rented').length;
     contarEExibirJogosAlugados();
 });
+
+// Saber se a palavra é um palindromo
+function palavraPalindromo() {
+let palavra = prompt('Digite uma palavra por favor');
+let letrasSeparadas = palavra.split("");
+let palavraInvertida = letrasSeparadas.reverse();
+palavraInvertida = palavraInvertida.join("");
+if (palavra == palavraInvertida) {
+   console.log (`A palavra ${palavra} é um palindromo!`); 
+} else {
+   console.log (`A palavra ${palavra} não é um palindromo!`);  
+}
+
+}
+
+palavraPalindromo();
